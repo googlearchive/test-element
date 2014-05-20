@@ -15,7 +15,9 @@ $ cd ..
 $ python -m SimpleHTTPServer 9000
 ```
 
-With the server running, load `http://localhost:9000/runner.html` in a browser to run the tests included. Boom.
+With the server running, load `http://localhost:9000/runner.html` in a browser to run the tests included. You should hopefully see something that looks like:
+
+<img src="https://cloud.githubusercontent.com/assets/110953/3029053/511063c6-e031-11e3-83ad-b9cf66d8cb3d.png" width="500px"/>
 
 
 ### Creating tests
