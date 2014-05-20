@@ -1,7 +1,7 @@
 unit-tests-sampler
 ====================
 
-Sample unit testing setup for Polymer elements.
+A unit testing sampler for Polymer elements.
 
 ## Setup
 
@@ -12,3 +12,10 @@ $ bower install
 $ cd ..
 $ python -m SimpleHTTPServer
 ```
+
+## Structure
+
+* runner.html - automates running Mocha
+* \tools - helper tools for HTML tests with Mocha and Karma
+* \tests - sample unit tests
+* .bowerrc, .bower.json - Bower config files.
