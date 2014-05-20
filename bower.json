@@ -1,0 +1,19 @@
+{
+  "name": "unit-tests-sampler",
+  "version": "0.0.0",
+  "homepage": "https://github.com/PolymerLabs/unit-tests-sample/",
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "core-collapse": "Polymer/core-collapse#~0.2.4",
+    "core-ajax": "Polymer/core-ajax#~0.2.4",
+    "core-localstorage": "Polymer/core-localstorage#~0.2.4",
+    "core-selection": "Polymer/core-selection#~0.2.4",
+    "core-selector": "Polymer/core-selector#~0.2.4",
+    "core-shared-lib": "Polymer/core-shared-lib#~0.2.4",
+    "chai": "~1.9.1",
+    "mocha": "~1.19.0"
+  },
+  "resolutions": {
+    "polymer": "master"
+  }
+}
