@@ -5,9 +5,11 @@ A unit testing sampler for Polymer elements using Mocha and Chai.
 
 ## Usage
 
-These steps will fetch the dependencies needed for testing & running this sampler:
+These steps will fetch the dependencies needed for testing & running this sampler. Note that bower dependencies will be installed in the parent directory, so it's recommended you clone `test-element` in a `components` or `development` directory to act as a workspace.
 
 ```
+$ mkdir development
+$ cd development
 $ git clone git://github.com/PolymerLabs/test-element.git
 $ cd test-element
 $ bower install
