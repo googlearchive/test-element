@@ -5,27 +5,27 @@ Element providing solution to no problem in particular.
 
 ##### Example
 
-    <my-element></my-element>
+    <test-element></test-element>
 
-@element my-element
+@element test-element
 @blurb Element providing solution to no problem in particular.
 @status alpha
-@homepage http://robdodson.github.io/my-element
+@homepage http://robdodson.github.io/test-element
 -->
-<polymer-element name="my-element" attributes="notitle">
+<polymer-element name="test-element" attributes="notitle">
 
   <template>
 
-    <link rel="stylesheet" href="my-element.css" />
+    <link rel="stylesheet" href="test-element.css" />
     
-    <h1>Hello from my-element</h1>
+    <h1>Hello from test-element</h1>
     <content></content>
 
   </template>
 
   <script>
 
-    Polymer('my-element', {
+    Polymer('test-element', {
       /**
        * The `author` attribute sets an initial author
        * 
@@ -60,10 +60,10 @@ Element providing solution to no problem in particular.
       },
 
       /**
-       * The `my-element-lasers-success` event is fired whenever we
+       * The `test-element-lasers-success` event is fired whenever we
        * call fireLasers.
        * 
-       * @event my-element-lasers-success
+       * @event test-element-lasers-success
        */
 
       /**
@@ -73,7 +73,7 @@ Element providing solution to no problem in particular.
        * @method fireLasers
        */
       fireLasers: function() {
-        this.fire('my-element-lasers-success', { sound: 'Pew pew pew!' });
+        this.fire('test-element-lasers-success', { sound: 'Pew pew pew!' });
       }
 
     });

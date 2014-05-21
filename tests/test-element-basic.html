@@ -2,24 +2,24 @@
 <html>
 <head>
 
-  <title>my-element</title>
+  <title>test-element</title>
 
   <script src="../../platform/platform.js"></script>
   <link rel="import" href="../tools/tools.html">
   <script src="../tools/htmltest.js"></script>
   
-  <link rel="import" href="../my-element.html">
+  <link rel="import" href="../test-element.html">
 
 </head>
 <body>
 
-  <my-element></my-element>
+  <test-element></test-element>
 
   <script>
 
     document.addEventListener('polymer-ready', function() {
       // Test a property
-      var myEl = document.querySelector('my-element');
+      var myEl = document.querySelector('test-element');
       assert.equal(myEl.author, 'Paul Irish');
 
       // Test a method
@@ -29,7 +29,7 @@
       assert.equal(greetings, 'My element says, greetings Earthlings');
 
       // Test an event
-      myEl.addEventListener('my-element-lasers-success', function(event) {
+      myEl.addEventListener('test-element-lasers-success', function(event) {
         assert.equal(event.detail.sound, 'Pew pew pew!');
         // IMPORTANT:
         // Make sure to call done() at the end of every test suite!

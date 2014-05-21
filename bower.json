@@ -1,7 +1,7 @@
 {
-  "name": "unit-tests-sampler",
+  "name": "test-element",
   "version": "0.0.0",
-  "homepage": "https://github.com/PolymerLabs/unit-tests-sample/",
+  "homepage": "https://github.com/PolymerLabs/test-element/",
   "dependencies": {
     "polymer": "Polymer/polymer#master",
     "core-selection": "Polymer/core-selection#~0.2.4",
