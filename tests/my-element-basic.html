@@ -18,9 +18,24 @@
   <script>
 
     document.addEventListener('polymer-ready', function() {
-      assert.isTrue(true);
-      // Make sure to call done at the end of every test!
-      done(); 
+      // Test a property
+      var myEl = document.querySelector('my-element');
+      assert.equal(myEl.author, 'Paul Irish');
+
+      // Test a method
+      var hello = myEl.sayHello();
+      assert.equal(hello, 'My element says, Hello World!');
+      var greetings = myEl.sayHello('greetings Earthlings');
+      assert.equal(greetings, 'My element says, greetings Earthlings');
+
+      // Test an event
+      myEl.addEventListener('my-element-lasers-success', function(event) {
+        assert.equal(event.detail.sound, 'Pew pew pew!');
+        // IMPORTANT:
+        // Make sure to call done() at the end of every test suite!
+        done(); 
+      });
+      myEl.fireLasers();
     });
 
   </script>
