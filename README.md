@@ -17,7 +17,7 @@ $ cd ..
 $ python -m SimpleHTTPServer 9000 # make sure you run this in the development dir
 ```
 
-With the server running, load `http://localhost:9000/runner.html` in a browser to run the tests included. 
+With the server running, load `http://localhost:9000/tests/runner.html` in a browser to run the tests included. 
 
 ### Creating tests
 
@@ -37,7 +37,7 @@ To customize the sampler for a new test:
   });
 ```
 
-That's it. You should now be able to run `python -m SimpleHTTPServer 9000`, open up your browser and run your tests from `http://localhost:9000/runner.html`.
+That's it. You should now be able to run `python -m SimpleHTTPServer 9000`, open up your browser and run your tests from `http://localhost:9000/tests/runner.html`.
 
 ### Structure
 

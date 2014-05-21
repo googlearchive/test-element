@@ -11,6 +11,9 @@
     "mocha": "~1.19.0"
   },
   "resolutions": {
-    "polymer": "master"
+    "polymer": "master",
+    "platform": "master",
+    "core-component-page": "master",
+    "core-action-icons": "master"
   }
 }
