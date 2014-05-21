@@ -14,7 +14,7 @@ $ git clone git://github.com/PolymerLabs/test-element.git
 $ cd test-element
 $ bower install
 $ cd ..
-$ python -m SimpleHTTPServer 9000
+$ python -m SimpleHTTPServer 9000 # make sure you run this in the development dir
 ```
 
 With the server running, load `http://localhost:9000/runner.html` in a browser to run the tests included. 
