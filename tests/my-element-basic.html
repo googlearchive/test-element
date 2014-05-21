@@ -8,7 +8,7 @@
   <link rel="import" href="../tools/tools.html">
   <script src="../tools/htmltest.js"></script>
   
-  <link rel="import" href="../../my-element/my-element.html">
+  <link rel="import" href="../my-element.html">
 
 </head>
 <body>
@@ -18,9 +18,9 @@
   <script>
 
     document.addEventListener('polymer-ready', function() {
-
-      // Tests go here
-
+      assert.isTrue(true);
+      // Make sure to call done at the end of every test!
+      done(); 
     });
 
   </script>
