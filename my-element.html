@@ -1,0 +1,83 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+Element providing solution to no problem in particular.
+
+##### Example
+
+    <my-element></my-element>
+
+@element my-element
+@blurb Element providing solution to no problem in particular.
+@status alpha
+@homepage http://robdodson.github.io/my-element
+-->
+<polymer-element name="my-element" attributes="notitle">
+
+  <template>
+
+    <link rel="stylesheet" href="my-element.css" />
+    
+    <h1>Hello from my-element</h1>
+    <content></content>
+
+  </template>
+
+  <script>
+
+    Polymer('my-element', {
+      /**
+       * The `author` attribute sets an initial author
+       * 
+       * @attribute author
+       * @type string
+       */
+      author: 'Paul Irish',
+      
+      /**
+       * `fancy` is a property that does something fancy.
+       * 
+       * @property fancy
+       * @type bool
+       */
+      aProp: false,
+
+      ready: function() {
+        // Ready is a lifecycle callback.
+        // You can do setup work in here.
+      },
+
+      /**
+       * The `sayHello` method will return a greeting
+       * 
+       * @method sayHello
+       * @return {String} Returns a string greeting.
+       * @param {String} greeting Pass in a specific greeting
+       */
+      sayHello: function(greeting) {
+        var response = greeting || 'Hello World!';
+        return 'My element says, ' + response;
+      },
+
+      /**
+       * The `my-element-lasers-success` event is fired whenever we
+       * call fireLasers.
+       * 
+       * @event my-element-lasers-success
+       */
+
+      /**
+       * The `fireLasers` method will fire the lasers. At least
+       * it will dispatch an event that claims lasers were fired :)
+       * 
+       * @method fireLasers
+       */
+      fireLasers: function() {
+        this.fire('my-element-lasers-success', { sound: 'Pew pew pew!' });
+      }
+
+    });
+
+  </script>
+
+</polymer-element>
